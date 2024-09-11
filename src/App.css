@@ -14,6 +14,10 @@ p{
   font-family: 'Bungee Inline', cursive;
 }
 
+.bounce{
+  animation: App-bounce 1s infinite;
+}
+
 .test {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3em;
@@ -59,3 +63,18 @@ p{
   }
 }
 
+@keyframes App-bounce {
+  from {
+    /* // move y pos up; */
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
